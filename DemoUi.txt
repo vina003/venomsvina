@@ -1,0 +1,10 @@
+1.Work Flow(UI Design)=>with js,sass
+*setUp Projects
+*SPA
+*graphics(favicon,images,etc);
+*code versioning(git with gitHub)
+*Responsive look
+Using Js
+a.Navbar Toggle
+b.Navbar Fixed
+c.set menu Active
