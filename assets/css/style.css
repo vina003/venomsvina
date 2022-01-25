@@ -1,3 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap|Galindo&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
+.font {
+  font-family: "Galindo", cursive;
+}
+
+.color__animation {
+  transition: 500ms;
+  animation: color-change 10s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: green;
+  }
+}
+.btn {
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  text-decoration: none;
+  line-height: 1;
+  font-size: 0.98rem;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  display: inline-block;
+}
+.btn-primary {
+  background-color: #1a1de2;
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: #2225b9;
+}
+
+.header {
+  padding: 1rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #90f06a;
+}
+.header--menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.header--menu__item > a {
+  margin-right: 5rem;
+  font-size: 16px;
+  text-decoration: none;
+  color: #242424;
+  transition: 300ms;
+}
+.header--menu__item > a:hover {
+  color: #1a1de2;
+}
+.header--menu__item > a.active {
+  color: #1a1de2;
+}
 
 /*# sourceMappingURL=style.css.map */
