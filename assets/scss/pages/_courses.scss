@@ -1,0 +1,57 @@
+@use "../abstract/functions" as func;
+
+.courses {
+  padding: 8rem 20rem;
+  background-color: func.theme-colors();
+
+  &--heading {
+    text-align: center;
+
+    h2 {
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    p {
+      color: rgb(223, 223, 223);
+    }
+  }
+
+  &-cards {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-card {
+    background-color: #fff;
+    max-width: 380px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &--img {
+      width: 380px;
+    }
+
+    &--body {
+      padding: 2rem;
+
+      h4 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        color: #808080;
+        line-height: 2;
+      }
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    &:hover {
+      box-shadow: 2px 2px 10px 5px rgb(215, 215, 215);
+    }
+  }
+}
