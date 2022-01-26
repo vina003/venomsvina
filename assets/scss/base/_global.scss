@@ -3,3 +3,11 @@
 .text-uppercase {
   text-transform: uppercase;
 }
+
+.line {
+  width: 5rem;
+  height: 0.5rem;
+  border-radius: 6px;
+  margin: 30px auto;
+  background: linear-gradient(to right, #e24997, #2d2ed4);
+}
