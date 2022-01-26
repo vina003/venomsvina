@@ -1,11 +1,17 @@
 //base
 @import "./base/reset";
-
-//utilities
-@import "./utilities/animation";
+@import "./base/global";
 
 //components
 @import "./components/buttons";
+@import "./components/badges";
 
 //layouts
 @import "./layouts//header";
+@import "./layouts/background_elements";
+
+//utilities
+@import "./utilities/animation";
+@import "./utilities/spacing";
+//pages
+@import "./pages/home";
