@@ -1,6 +1,7 @@
 @use "../abstract/variable" as var; //modules
 @use "../abstract/functions" as func;
 @use "../abstract/mixins" as mixins;
+
 .header {
   padding: 1rem 20rem;
   display: flex;
@@ -10,39 +11,32 @@
 
   @include mixins.responsive(xs) {
     //css code
-    padding: 2rem 2rem;
-
-    h2 {
-      font-size: 1rem;
-    }
-    h2 > span {
-      font-size: 1rem;
-    }
+    padding: 1rem 2rem;
   }
 
   @include mixins.responsive(sm) {
     //css code
-    padding: 2rem 2rem;
-    h2 > span {
-      font-size: 2rem;
-    }
+    padding: 1rem 2rem;
   }
 
   @include mixins.responsive(md) {
     //css code
-    padding: 2rem 2rem;
-    h2 > span {
-      font-size: 2rem;
-    }
+    padding: 1rem 2rem;
   }
 
   @include mixins.responsive(lg) {
     //css code
-    padding: 1rem 2rem;
-    h2 {
-      font-size: 1rem;
-    }
-    h2 > span {
+    padding: 1rem 6rem;
+  }
+
+  @include mixins.responsive(xlg) {
+    //css code
+    padding: 1rem 13rem;
+  }
+
+  h2 > span {
+    font-size: 1rem;
+    @include mixins.responsive(xs) {
       font-size: 1rem;
     }
   }

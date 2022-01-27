@@ -1,5 +1,6 @@
 @use "../abstract/functions" as func;
 @use "../abstract/mixins" as mixins;
+
 .courses {
   padding: 8rem 20rem;
   background-color: func.theme-colors();
@@ -13,7 +14,15 @@
   }
 
   @include mixins.responsive(lg) {
-    padding: 1rem 4rem;
+    padding: 8rem 4rem;
+  }
+
+  @include mixins.responsive(xlg) {
+    padding: 8rem 15rem;
+  }
+
+  @include mixins.responsive(xxlg) {
+    padding: 8rem 10rem;
   }
 
   &--heading {
@@ -22,6 +31,18 @@
     h2 {
       font-size: 2rem;
       color: #fff;
+
+      @include mixins.responsive(xs) {
+        font-size: 1.5rem;
+      }
+
+      @include mixins.responsive(sm) {
+        font-size: 1.5rem;
+      }
+
+      @include mixins.responsive(xxlg) {
+        font-size: 2rem;
+      }
     }
 
     p {
@@ -35,19 +56,15 @@
         font-size: 0.9rem;
       }
 
-      @include mixins.responsive(md) {
-        font-size: 0.9rem;
-      }
-
-      @include mixins.responsive(lg) {
-        font-size: 0.8rem;
+      @include mixins.responsive(xxlg) {
+        font-size: 1rem;
       }
     }
   }
 
   &-cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     @include mixins.responsive(xs) {
       flex-direction: column;
@@ -60,6 +77,7 @@
 
     @include mixins.responsive(lg) {
       flex-direction: row;
+      align-items: center;
     }
   }
 
@@ -70,45 +88,90 @@
     overflow: hidden;
 
     @include mixins.responsive(lg) {
-      max-width: 250px;
+      max-width: 280px;
+    }
+
+    @include mixins.responsive(xxlg) {
+      max-width: 350px;
     }
 
     &--img {
-      width: 300px;
+      width: 380px;
+
+      @include mixins.responsive(lg) {
+        width: 280px;
+      }
+
+      @include mixins.responsive(xxlg) {
+        width: 350px;
+      }
     }
 
     &--body {
       padding: 2rem;
 
       h4 {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
 
-        @include mixins.responsive(sm) {
-          font-size: 1rem;
+        @include mixins.responsive(xs) {
+          font-size: 1.3rem;
         }
 
-        @include mixins.responsive(md) {
-          font-size: 1.5rem;
+        @include mixins.responsive(sm) {
+          font-size: 1.3rem;
         }
 
         @include mixins.responsive(lg) {
           font-size: 1rem;
         }
+
+        @include mixins.responsive(xxlg) {
+          font-size: 1.5rem;
+        }
       }
 
       p {
-        color: #808080;
-        line-height: 2;
+        color: gray;
+        line-height: 1.5;
+
+        @include mixins.responsive(xs) {
+          font-size: 0.9rem;
+        }
+
+        @include mixins.responsive(sm) {
+          font-size: 0.9rem;
+        }
+
+        @include mixins.responsive(lg) {
+          font-size: 0.8rem;
+        }
+
+        @include mixins.responsive(xxlg) {
+          font-size: 1rem;
+        }
       }
     }
 
     a {
-      color: #000;
+      color: rgba(0, 0, 0, 0.938);
       text-decoration: none;
     }
 
     &:hover {
-      box-shadow: 2px 2px 10px 5px rgb(215, 215, 215);
+      box-shadow: 2px 2px 20px 5px rgba(54, 54, 54, 0.5);
+    }
+  }
+
+  &--info {
+    text-align: center;
+    color: rgb(245, 245, 245);
+
+    a {
+      color: #fff;
+
+      &:hover {
+        text-shadow: 2px 2px 10px #000;
+      }
     }
   }
 }

@@ -3,7 +3,8 @@
 .hero-area {
   padding: 8rem 20rem;
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
 
   @include mixins.responsive(xs) {
@@ -16,9 +17,13 @@
     flex-direction: column;
   }
 
-  @include mixins.responsive(sm) {
+  @include mixins.responsive(lg) {
     padding: 8rem 6rem;
     flex-direction: row;
+  }
+
+  @include mixins.responsive(xlg) {
+    padding: 8rem 15rem;
   }
 
   img {
@@ -51,6 +56,20 @@
       }
     }
 
+    @include mixins.responsive(lg) {
+      font-size: 1.5rem;
+      & > span {
+        font-size: 1.5rem;
+      }
+    }
+
+    @include mixins.responsive(xlg) {
+      font-size: 2.5rem;
+      & > span {
+        font-size: 3rem;
+      }
+    }
+
     & > span {
       font-size: 1.5rem;
     }
@@ -67,6 +86,10 @@
 
     @include mixins.responsive(lg) {
       font-size: 1rem;
+    }
+
+    @include mixins.responsive(xlg) {
+      font-size: 1.5rem;
     }
   }
 }
