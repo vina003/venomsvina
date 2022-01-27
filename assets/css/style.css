@@ -88,7 +88,7 @@
 }
 
 .header {
-  padding: 1rem 10rem;
+  padding: 1rem 20rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -113,6 +113,25 @@
     font-size: 2rem;
   }
 }
+@media only screen and (min-width: 768px) {
+  .header {
+    padding: 2rem 2rem;
+  }
+  .header h2 > span {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+  .header h2 {
+    font-size: 1rem;
+  }
+  .header h2 > span {
+    font-size: 1rem;
+  }
+}
 .header .nav-toggler {
   display: none;
 }
@@ -125,6 +144,12 @@
 @media only screen and (min-width: 576px) {
   .header .nav-toggler {
     display: block;
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .header .nav-toggler {
+    display: none;
     font-size: 1.3rem;
   }
 }
@@ -145,6 +170,11 @@
     display: none;
   }
 }
+@media only screen and (min-width: 576px) {
+  .header--menu {
+    display: flex;
+  }
+}
 .header--menu__item > a {
   margin-right: 5rem;
   font-size: 16px;
@@ -157,6 +187,11 @@
 }
 .header--menu__item > a.active {
   color: #1a1de2;
+}
+@media only screen and (min-width: 576px) {
+  .header--menu__item > a {
+    font-size: 11px;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -182,6 +217,16 @@
     top: 25%;
   }
 }
+@media only screen and (min-width: 576px) {
+  .background-shapes .box1 {
+    top: 30%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .background-shapes .box1 {
+    top: 25%;
+  }
+}
 .background-shapes .box2 {
   position: absolute;
   top: 25%;
@@ -198,6 +243,18 @@
 @media only screen and (min-width: 576px) {
   .background-shapes .box2 {
     top: 160%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .background-shapes .box2 {
+    top: 150%;
+    left: 80%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .background-shapes .box2 {
+    top: 90%;
+    left: 80%;
   }
 }
 .background-shapes .box3 {
@@ -230,6 +287,11 @@
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
+@media only screen and (min-width: 992px) {
+  .background-shapes .dot1 {
+    top: 90%;
+  }
+}
 .background-shapes .dot2 {
   position: absolute;
   top: 20%;
@@ -245,6 +307,12 @@
 @media only screen and (min-width: 576px) {
   .background-shapes .dot2 {
     top: 25%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .background-shapes .dot2 {
+    top: 30%;
+    left: 75%;
   }
 }
 .background-shapes .dot3 {
@@ -265,6 +333,16 @@
     left: 45%;
   }
 }
+@media only screen and (min-width: 768px) {
+  .background-shapes .dot3 {
+    top: 150%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .background-shapes .dot3 {
+    top: 80%;
+  }
+}
 .background-shapes .dot4 {
   position: absolute;
   top: 100%;
@@ -276,6 +354,12 @@
   z-index: -1;
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
+}
+@media only screen and (min-width: 992px) {
+  .background-shapes {
+    top: 50%;
+    left: 40%;
+  }
 }
 
 .heart1 {
@@ -315,6 +399,17 @@
     top: 160%;
   }
 }
+@media only screen and (min-width: 768px) {
+  .circle1 {
+    top: 150%;
+    left: 10%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .circle1 {
+    top: 80%;
+  }
+}
 
 .circle2 {
   position: absolute;
@@ -329,6 +424,16 @@
   animation: box-shape linear 5s infinite;
 }
 @media only screen and (min-width: 576px) {
+  .circle2 {
+    top: 25%;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .circle2 {
+    top: 30%;
+  }
+}
+@media only screen and (min-width: 768px) {
   .circle2 {
     top: 25%;
   }
@@ -1055,11 +1160,22 @@ footer .legal {
     flex-direction: column;
   }
 }
+@media only screen and (min-width: 576px) {
+  .hero-area {
+    padding: 8rem 6rem;
+    flex-direction: row;
+  }
+}
 .hero-area img {
   width: 30rem;
 }
 .hero-area--contents {
   max-width: 38rem;
+}
+@media only screen and (min-width: 992px) {
+  .hero-area--contents {
+    max-width: 30rem;
+  }
 }
 .hero-area--title {
   font-size: 2rem;
@@ -1094,6 +1210,11 @@ footer .legal {
     font-size: 1rem;
   }
 }
+@media only screen and (min-width: 992px) {
+  .hero-area--desc {
+    font-size: 1rem;
+  }
+}
 
 .about-area {
   padding: 8rem 20rem;
@@ -1117,12 +1238,25 @@ footer .legal {
     margin-top: 0;
   }
 }
+@media only screen and (min-width: 992px) {
+  .about-area {
+    padding: 8rem 6rem;
+    flex-direction: row;
+    margin-top: 0;
+    align-items: center;
+  }
+}
 .about-area--img {
   width: 34rem;
 }
 @media only screen and (min-width: 576px) {
   .about-area--img {
-    width: 25rem;
+    width: 34rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .about-area--img {
+    width: 68rem;
   }
 }
 .about-area--contents {
@@ -1134,6 +1268,11 @@ footer .legal {
   }
 }
 @media only screen and (min-width: 576px) {
+  .about-area--contents {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 992px) {
   .about-area--contents {
     margin: 0;
   }
@@ -1151,9 +1290,24 @@ footer .legal {
     font-size: 1.8rem;
   }
 }
+@media only screen and (min-width: 768px) {
+  .about-area--contents h2 {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .about-area--contents h2 {
+    font-size: 1.5rem;
+  }
+}
 .about-area--contents p {
   line-height: 2;
   color: #cfcfcf;
+}
+@media only screen and (min-width: 992px) {
+  .about-area--contents p {
+    font-size: 1rem;
+  }
 }
 .about-area--contents p a {
   color: #fff;
@@ -1175,6 +1329,11 @@ footer .legal {
 @media only screen and (min-width: 576px) {
   .roadmap {
     padding: 4rem 2rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .roadmap {
+    padding: 8rem 4rem;
   }
 }
 .roadmap--heading {
@@ -1202,6 +1361,11 @@ footer .legal {
     flex-direction: column;
   }
 }
+@media only screen and (min-width: 992px) {
+  .roadmap--items {
+    flex-direction: row;
+  }
+}
 .roadmap--item {
   transition: 500ms;
   position: relative;
@@ -1211,6 +1375,12 @@ footer .legal {
   cursor: pointer;
   filter: grayscale(100%);
   margin-left: 3.9rem;
+}
+@media only screen and (min-width: 992px) {
+  .roadmap--item {
+    max-width: 600px;
+    padding: 0;
+  }
 }
 .roadmap--item:hover .roadmap--item__img::after {
   animation: rotate-infinite 4000ms linear infinite;
@@ -1242,9 +1412,19 @@ footer .legal {
   font-size: 1.5rem;
   font-weight: 600;
 }
+@media only screen and (min-width: 992px) {
+  .roadmap--item__contents h5 {
+    font-size: 1rem;
+  }
+}
 .roadmap--item__contents p {
   color: gray;
   line-height: 1.5;
+}
+@media only screen and (min-width: 992px) {
+  .roadmap--item__contents p {
+    font-size: 0.9rem;
+  }
 }
 .roadmap--item:not(:last-child)::before {
   transition: 500ms;
@@ -1275,6 +1455,14 @@ footer .legal {
     left: 36%;
   }
 }
+@media only screen and (min-width: 992px) {
+  .roadmap--item:not(:last-child)::before {
+    content: "\f054";
+    top: 35%;
+    left: auto;
+    right: -30%;
+  }
+}
 .roadmap--item:hover:not(:last-child)::before {
   color: #1a1de2;
   right: -32%;
@@ -1303,6 +1491,12 @@ footer .legal {
     left: 0;
   }
 }
+@media only screen and (min-width: 992px) {
+  .roadmap--item:hover:last-child::after {
+    top: 100%;
+    left: 0;
+  }
+}
 .roadmap--item:hover h5 {
   color: #1a1de2;
 }
@@ -1322,6 +1516,11 @@ footer .legal {
 @media only screen and (min-width: 576px) {
   .courses {
     padding: 4rem 2rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .courses {
+    padding: 1rem 4rem;
   }
 }
 .courses--heading {
@@ -1344,6 +1543,16 @@ footer .legal {
     font-size: 0.9rem;
   }
 }
+@media only screen and (min-width: 768px) {
+  .courses--heading p {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .courses--heading p {
+    font-size: 0.8rem;
+  }
+}
 .courses-cards {
   display: flex;
   justify-content: space-between;
@@ -1359,20 +1568,45 @@ footer .legal {
     align-items: center;
   }
 }
+@media only screen and (min-width: 992px) {
+  .courses-cards {
+    flex-direction: row;
+  }
+}
 .courses-card {
   background-color: #fff;
   max-width: 380px;
   border-radius: 10px;
   overflow: hidden;
 }
+@media only screen and (min-width: 992px) {
+  .courses-card {
+    max-width: 250px;
+  }
+}
 .courses-card--img {
-  width: 380px;
+  width: 300px;
 }
 .courses-card--body {
   padding: 2rem;
 }
 .courses-card--body h4 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+@media only screen and (min-width: 576px) {
+  .courses-card--body h4 {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .courses-card--body h4 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .courses-card--body h4 {
+    font-size: 1rem;
+  }
 }
 .courses-card--body p {
   color: #808080;
@@ -1400,6 +1634,11 @@ footer .legal {
     padding: 4rem 2rem;
   }
 }
+@media only screen and (min-width: 992px) {
+  .contact {
+    padding: 8rem 6rem;
+  }
+}
 .contact-card {
   display: flex;
   justify-content: space-between;
@@ -1420,6 +1659,16 @@ footer .legal {
     flex-direction: column;
     padding: 2rem;
     align-items: initial;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contact-card {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contact-card img {
+    width: 30rem;
   }
 }
 .contact-card--contents {

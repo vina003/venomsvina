@@ -2,7 +2,7 @@
 @use "../abstract/functions" as func;
 @use "../abstract/mixins" as mixins;
 .header {
-  padding: 1rem 10rem;
+  padding: 1rem 20rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,6 +28,25 @@
     }
   }
 
+  @include mixins.responsive(md) {
+    //css code
+    padding: 2rem 2rem;
+    h2 > span {
+      font-size: 2rem;
+    }
+  }
+
+  @include mixins.responsive(lg) {
+    //css code
+    padding: 1rem 2rem;
+    h2 {
+      font-size: 1rem;
+    }
+    h2 > span {
+      font-size: 1rem;
+    }
+  }
+
   .nav-toggler {
     display: none;
 
@@ -38,6 +57,11 @@
 
     @include mixins.responsive(sm) {
       display: block;
+      font-size: 1.3rem;
+    }
+
+    @include mixins.responsive(lg) {
+      display: none;
       font-size: 1.3rem;
     }
   }
@@ -57,6 +81,10 @@
       display: none;
     }
 
+    @include mixins.responsive(sm) {
+      display: flex;
+    }
+
     &__item > a {
       margin-right: 5rem;
       font-size: 16px;
@@ -70,6 +98,10 @@
 
       &.active {
         color: func.theme-colors();
+      }
+
+      @include mixins.responsive(sm) {
+        font-size: 11px;
       }
     }
   }

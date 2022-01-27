@@ -22,11 +22,22 @@
     margin-top: 0;
   }
 
+  @include mixins.responsive(lg) {
+    padding: 8rem 6rem;
+    flex-direction: row;
+    margin-top: 0;
+    align-items: center;
+  }
+
   &--img {
     width: 34rem;
 
     @include mixins.responsive(sm) {
-      width: 25rem;
+      width: 34rem;
+    }
+
+    @include mixins.responsive(lg) {
+      width: 68rem;
     }
   }
 
@@ -41,6 +52,10 @@
       margin: 0;
     }
 
+    @include mixins.responsive(lg) {
+      margin: 0;
+    }
+
     h2 {
       font-size: 3rem;
 
@@ -51,11 +66,23 @@
       @include mixins.responsive(sm) {
         font-size: 1.8rem;
       }
+
+      @include mixins.responsive(md) {
+        font-size: 1rem;
+      }
+
+      @include mixins.responsive(lg) {
+        font-size: 1.5rem;
+      }
     }
 
     p {
       line-height: 2;
       color: #cfcfcf;
+
+      @include mixins.responsive(lg) {
+        font-size: 1rem;
+      }
 
       a {
         color: #fff;
