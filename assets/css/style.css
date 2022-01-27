@@ -244,6 +244,32 @@
   animation: box-shape linear 5s infinite;
 }
 
+footer {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #1a1de2;
+  color: #fff;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+footer a:hover {
+  text-shadow: 2px 2px 10px #000;
+}
+footer .social-icons > a > i {
+  transition: 500ms;
+  font-size: 1.5rem;
+  padding: 0 10px;
+  color: #1619a0;
+}
+footer .social-icons > a > i:hover {
+  color: #e0e0e0;
+}
+footer .legal {
+  font-size: 0.9rem;
+}
+
 @keyframes color-change {
   0% {
     color: red;
@@ -912,7 +938,7 @@
 }
 
 .hero-area {
-  padding: 8rem 18rem;
+  padding: 8rem 20rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -921,12 +947,12 @@
   max-width: 38rem;
 }
 .hero-area--title {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 .hero-area--desc {
-  margin-top: 2rem;
-  font-size: 1.4rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
   line-height: 1.8;
 }
 
