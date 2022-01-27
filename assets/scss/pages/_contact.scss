@@ -8,6 +8,10 @@
     padding: 4rem 2rem;
   }
 
+  @include mixins.responsive(sm) {
+    padding: 4rem 2rem;
+  }
+
   &-card {
     display: flex;
     justify-content: space-between;
@@ -18,12 +22,28 @@
 
     @include mixins.responsive(xs) {
       flex-direction: column;
+      padding: 2rem;
+      align-items: initial;
+    }
+
+    @include mixins.responsive(sm) {
+      flex-direction: column;
+      padding: 2rem;
+      align-items: initial;
     }
 
     &--contents {
       flex-grow: 1;
-      h3 {
-        font-size: 1.5rem;
+      h4 {
+        font-size: 2rem;
+
+        @include mixins.responsive(xs) {
+          font-size: 1rem;
+        }
+
+        @include mixins.responsive(sm) {
+          font-size: 1rem;
+        }
       }
 
       p {
@@ -31,6 +51,10 @@
         color: grey;
 
         @include mixins.responsive(xs) {
+          font-size: 0.8rem;
+        }
+
+        @include mixins.responsive(sm) {
           font-size: 0.8rem;
         }
       }

@@ -11,8 +11,20 @@
   @include mixins.responsive(xs) {
     //css code
     padding: 2rem 2rem;
+
     h2 {
       font-size: 1rem;
+    }
+    h2 > span {
+      font-size: 1rem;
+    }
+  }
+
+  @include mixins.responsive(sm) {
+    //css code
+    padding: 2rem 2rem;
+    h2 > span {
+      font-size: 2rem;
     }
   }
 
@@ -21,6 +33,12 @@
 
     @include mixins.responsive(xs) {
       display: block;
+      font-size: 1.3rem;
+    }
+
+    @include mixins.responsive(sm) {
+      display: block;
+      font-size: 1.3rem;
     }
   }
 
@@ -32,6 +50,10 @@
     font-weight: bolder;
 
     @include mixins.responsive(xs) {
+      display: none;
+    }
+
+    @include mixins.responsive(sm) {
       display: none;
     }
 
