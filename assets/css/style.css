@@ -28,6 +28,11 @@
   background: linear-gradient(to right, #e24997, #2d2ed4);
 }
 
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
 .btn, .btn-primary-outlined, .btn-primary {
   padding: 0.8rem 1.6rem;
   border-radius: 6px;
@@ -89,12 +94,33 @@
   align-items: center;
   border-bottom: 1px solid #90f06a;
 }
+@media only screen and (max-width: 576px) {
+  .header {
+    padding: 2rem 2rem;
+  }
+  .header h2 {
+    font-size: 1rem;
+  }
+}
+.header .nav-toggler {
+  display: none;
+}
+@media only screen and (max-width: 576px) {
+  .header .nav-toggler {
+    display: block;
+  }
+}
 .header--menu {
   display: flex;
   align-items: center;
   list-style: none;
   text-transform: uppercase;
   font-weight: bolder;
+}
+@media only screen and (max-width: 576px) {
+  .header--menu {
+    display: none;
+  }
 }
 .header--menu__item > a {
   margin-right: 5rem;
@@ -110,6 +136,11 @@
   color: #1a1de2;
 }
 
+@media only screen and (max-width: 576px) {
+  .background-shapes {
+    display: none;
+  }
+}
 .background-shapes .box1 {
   position: absolute;
   top: 20%;
@@ -249,6 +280,11 @@ footer {
   text-align: center;
   background-color: #1a1de2;
   color: #fff;
+}
+@media only screen and (max-width: 576px) {
+  footer h2 {
+    font-size: 1rem;
+  }
 }
 footer a {
   text-decoration: none;
@@ -943,17 +979,33 @@ footer .legal {
   justify-content: space-evenly;
   align-items: center;
 }
+@media only screen and (max-width: 576px) {
+  .hero-area {
+    padding: 4rem 2rem;
+    flex-direction: column;
+  }
+}
 .hero-area--contents {
   max-width: 38rem;
 }
 .hero-area--title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
+}
+@media only screen and (max-width: 576px) {
+  .hero-area--title {
+    font-size: 1.5rem;
+  }
 }
 .hero-area--desc {
   margin-top: 1rem;
   font-size: 1.2rem;
   line-height: 1.8;
+}
+@media only screen and (max-width: 576px) {
+  .hero-area--desc {
+    font-size: 1rem;
+  }
 }
 
 .about-area {
@@ -964,14 +1016,31 @@ footer .legal {
   align-items: center;
   margin-top: 11rem;
 }
+@media only screen and (max-width: 576px) {
+  .about-area {
+    padding: 4rem 2rem;
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
 .about-area--img {
   width: 34rem;
 }
 .about-area--contents {
   color: #fff;
 }
+@media only screen and (max-width: 576px) {
+  .about-area--contents {
+    margin: 0;
+  }
+}
 .about-area--contents h2 {
   font-size: 3rem;
+}
+@media only screen and (max-width: 576px) {
+  .about-area--contents h2 {
+    font-size: 2rem;
+  }
 }
 .about-area--contents p {
   line-height: 2;
@@ -989,6 +1058,11 @@ footer .legal {
 .roadmap {
   padding: 8rem 20rem;
 }
+@media only screen and (max-width: 576px) {
+  .roadmap {
+    padding: 4rem 2rem;
+  }
+}
 .roadmap--heading {
   text-align: center;
 }
@@ -1003,6 +1077,11 @@ footer .legal {
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
+}
+@media only screen and (max-width: 576px) {
+  .roadmap--items {
+    flex-direction: column;
+  }
 }
 .roadmap--item {
   transition: 500ms;
@@ -1063,6 +1142,13 @@ footer .legal {
   line-height: 1;
   color: #020702;
 }
+@media only screen and (max-width: 576px) {
+  .roadmap--item:not(:last-child)::before {
+    content: "\f107";
+    top: 90%;
+    left: 25%;
+  }
+}
 .roadmap--item:hover:not(:last-child)::before {
   color: #1a1de2;
   right: -32%;
@@ -1079,6 +1165,12 @@ footer .legal {
   line-height: 1;
   color: #1a1de2;
 }
+@media only screen and (max-width: 576px) {
+  .roadmap--item:hover:last-child::after {
+    top: 90%;
+    left: 0;
+  }
+}
 .roadmap--item:hover h5 {
   color: #1a1de2;
 }
@@ -1089,6 +1181,11 @@ footer .legal {
 .courses {
   padding: 8rem 20rem;
   background-color: #1a1de2;
+}
+@media only screen and (max-width: 576px) {
+  .courses {
+    padding: 4rem 2rem;
+  }
 }
 .courses--heading {
   text-align: center;
@@ -1103,6 +1200,11 @@ footer .legal {
 .courses-cards {
   display: flex;
   justify-content: space-between;
+}
+@media only screen and (max-width: 576px) {
+  .courses-cards {
+    flex-direction: column;
+  }
 }
 .courses-card {
   background-color: #fff;
@@ -1135,6 +1237,11 @@ footer .legal {
   padding: 8rem 20rem;
   background-color: #83b4a6b2;
 }
+@media only screen and (max-width: 576px) {
+  .contact {
+    padding: 4rem 2rem;
+  }
+}
 .contact-card {
   display: flex;
   justify-content: space-between;
@@ -1142,6 +1249,11 @@ footer .legal {
   background-color: #fff;
   padding: 2rem 3rem;
   border-radius: 1rem;
+}
+@media only screen and (max-width: 576px) {
+  .contact-card {
+    flex-direction: column;
+  }
 }
 .contact-card--contents {
   flex-grow: 1;
@@ -1152,6 +1264,11 @@ footer .legal {
 .contact-card--contents p {
   font-size: 1rem;
   color: grey;
+}
+@media only screen and (max-width: 576px) {
+  .contact-card--contents p {
+    font-size: 0.8rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

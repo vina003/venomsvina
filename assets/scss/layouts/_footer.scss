@@ -1,10 +1,16 @@
 @use "../abstract/functions" as func;
-
+@use "../abstract/mixins" as mixins;
 footer {
   padding: 2rem 0;
   text-align: center;
   background-color: func.theme-colors();
   color: #fff;
+
+  @include mixins.responsive(xs) {
+    h2 {
+      font-size: 1rem;
+    }
+  }
 
   a {
     text-decoration: none;

@@ -1,8 +1,12 @@
 @use "../abstract/functions" as func;
-
+@use "../abstract/mixins" as mixins;
 .courses {
   padding: 8rem 20rem;
   background-color: func.theme-colors();
+
+  @include mixins.responsive(xs) {
+    padding: 4rem 2rem;
+  }
 
   &--heading {
     text-align: center;
@@ -20,6 +24,10 @@
   &-cards {
     display: flex;
     justify-content: space-between;
+
+    @include mixins.responsive(xs) {
+      flex-direction: column;
+    }
   }
 
   &-card {

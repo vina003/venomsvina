@@ -1,21 +1,36 @@
+@use "../abstract/mixins" as mixins;
+
 .hero-area {
   padding: 8rem 20rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 
+  @include mixins.responsive(xs) {
+    padding: 4rem 2rem;
+    flex-direction: column;
+  }
+
   &--contents {
     max-width: 38rem;
   }
 
   &--title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
+
+    @include mixins.responsive(xs) {
+      font-size: 1.5rem;
+    }
   }
 
   &--desc {
     margin-top: 1rem;
     font-size: 1.2rem;
     line-height: 1.8;
+
+    @include mixins.responsive(xs) {
+      font-size: 1rem;
+    }
   }
 }
