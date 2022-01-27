@@ -26,6 +26,11 @@
     padding: 8rem 15rem;
   }
 
+  @include mixins.responsive(xlg) {
+    padding: 8rem 20rem;
+    justify-content: space-between;
+  }
+
   img {
     width: 30rem;
   }

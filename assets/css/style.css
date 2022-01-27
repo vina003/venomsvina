@@ -119,6 +119,11 @@
     padding: 1rem 13rem;
   }
 }
+@media only screen and (min-width: 1400px) {
+  .header {
+    padding: 1rem 20rem;
+  }
+}
 .header h2 > span {
   font-size: 1rem;
 }
@@ -1168,6 +1173,12 @@ footer .legal {
 @media only screen and (min-width: 1200px) {
   .hero-area {
     padding: 8rem 15rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero-area {
+    padding: 8rem 20rem;
+    justify-content: space-between;
   }
 }
 .hero-area img {
