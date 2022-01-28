@@ -11,9 +11,9 @@
   margin-top: 11rem;
 
   @include mixins.responsive(xs) {
-    padding: 4rem 2rem;
+    padding: 6rem 2rem;
     flex-direction: column;
-    margin-top: 0;
+    margin-top: 3rem;
   }
 
   @include mixins.responsive(sm) {
@@ -34,7 +34,13 @@
   }
 
   &--img {
-    width: 34rem;
+    @include mixins.responsive(xs) {
+      width: 34rem;
+    }
+
+    @include mixins.responsive(sm) {
+      width: 34rem;
+    }
 
     @include mixins.responsive(sm) {
       width: 34rem;
@@ -68,7 +74,7 @@
       font-size: 3rem;
 
       @include mixins.responsive(xs) {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
       }
 
       @include mixins.responsive(sm) {

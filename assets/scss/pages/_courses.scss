@@ -6,7 +6,7 @@
   background-color: func.theme-colors();
 
   @include mixins.responsive(xs) {
-    padding: 4rem 2rem;
+    padding: 6rem 2rem;
   }
 
   @include mixins.responsive(sm) {
@@ -33,7 +33,11 @@
       color: #fff;
 
       @include mixins.responsive(xs) {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+
+        h2 {
+          margin-top: 0;
+        }
       }
 
       @include mixins.responsive(sm) {
@@ -88,7 +92,7 @@
     overflow: hidden;
 
     @include mixins.responsive(lg) {
-      max-width: 280px;
+      max-width: 380px;
     }
 
     @include mixins.responsive(xxlg) {
@@ -99,7 +103,7 @@
       width: 380px;
 
       @include mixins.responsive(lg) {
-        width: 280px;
+        width: 380px;
       }
 
       @include mixins.responsive(xxlg) {
@@ -114,7 +118,7 @@
         font-size: 1.5rem;
 
         @include mixins.responsive(xs) {
-          font-size: 1.3rem;
+          font-size: 1.2rem;
         }
 
         @include mixins.responsive(sm) {
@@ -135,7 +139,7 @@
         line-height: 1.5;
 
         @include mixins.responsive(xs) {
-          font-size: 0.9rem;
+          font-size: 1rem;
         }
 
         @include mixins.responsive(sm) {

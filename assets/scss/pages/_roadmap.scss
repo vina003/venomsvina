@@ -6,7 +6,16 @@
   padding: 8rem 20rem;
 
   @include mixins.responsive(xs) {
-    padding: 4rem 2rem;
+    padding: 5rem 2rem;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
   }
 
   @include mixins.responsive(sm) {
@@ -45,6 +54,7 @@
 
     @include mixins.responsive(xs) {
       flex-direction: column;
+      padding: 0 3rem;
     }
 
     @include mixins.responsive(sm) {
@@ -105,6 +115,10 @@
         font-size: 1.5rem;
         font-weight: 600;
 
+        @include mixins.responsive(xs) {
+          font-size: 1.1rem;
+        }
+
         @include mixins.responsive(lg) {
           font-size: 1rem;
         }
@@ -113,6 +127,10 @@
       p {
         color: gray;
         line-height: 1.5;
+
+        @include mixins.responsive(xs) {
+          font-size: 1rem;
+        }
 
         @include mixins.responsive(lg) {
           font-size: 0.9rem;
@@ -138,7 +156,7 @@
       @include mixins.responsive(xs) {
         content: "";
         top: 90%;
-        left: 25%;
+        left: 20%;
       }
 
       @include mixins.responsive(sm) {
@@ -173,7 +191,7 @@
       color: func.theme-colors();
 
       @include mixins.responsive(xs) {
-        top: 90%;
+        top: 95%;
         left: 0;
       }
 
@@ -189,7 +207,7 @@
     }
 
     &:hover h5 {
-      color: func.theme-colors();
+      color: func.theme-colors("violet");
     }
 
     &:hover {
