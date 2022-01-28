@@ -20,7 +20,11 @@
 
   @include mixins.responsive(sm) {
     //css code
-    padding: 2rem 2rem;
+    padding: 2rem 4rem;
+
+    h2 {
+      font-size: 7rem;
+    }
   }
 
   @include mixins.responsive(md) {
@@ -78,7 +82,6 @@
 
     @include mixins.responsive(xs) {
       display: none;
-
       position: fixed;
       top: -100%;
       left: 0;
@@ -111,7 +114,7 @@
       display: none;
     }
 
-    @include mixins.responsive(sm) {
+    @include mixins.responsive(lg) {
       display: flex;
     }
 
@@ -122,16 +125,17 @@
       color: #242424;
       transition: 300ms;
 
+      @include mixins.responsive(xs) {
+        font-size: 15px;
+        margin: 0 3rem;
+      }
+
       &:hover {
         color: func.theme-colors();
       }
 
       &.active {
         color: func.theme-colors();
-      }
-
-      @include mixins.responsive(sm) {
-        font-size: 11px;
       }
     }
   }

@@ -23,7 +23,7 @@
   }
 
   @include mixins.responsive(lg) {
-    padding: 8rem 4rem;
+    padding: 8rem 6rem;
   }
 
   @include mixins.responsive(xlg) {
@@ -77,8 +77,8 @@
     margin-left: 3.9rem;
 
     @include mixins.responsive(lg) {
-      max-width: 600px;
-      padding: 0;
+      max-width: 350px;
+      padding: auto;
     }
 
     &:hover &__img::after {

@@ -109,7 +109,10 @@
 }
 @media only screen and (min-width: 576px) {
   .header {
-    padding: 2rem 2rem;
+    padding: 2rem 4rem;
+  }
+  .header h2 {
+    font-size: 7rem;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -200,7 +203,7 @@
     display: none;
   }
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 992px) {
   .header--menu {
     display: flex;
   }
@@ -212,16 +215,17 @@
   color: #242424;
   transition: 300ms;
 }
+@media only screen and (max-width: 576px) {
+  .header--menu__item > a {
+    font-size: 15px;
+    margin: 0 3rem;
+  }
+}
 .header--menu__item > a:hover {
   color: #1a1de2;
 }
 .header--menu__item > a.active {
   color: #1a1de2;
-}
-@media only screen and (min-width: 576px) {
-  .header--menu__item > a {
-    font-size: 11px;
-  }
 }
 .header.navbar-fixed {
   position: fixed;
@@ -1432,7 +1436,7 @@ footer .legal {
 }
 @media only screen and (min-width: 992px) {
   .roadmap {
-    padding: 8rem 4rem;
+    padding: 8rem 6rem;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -1488,8 +1492,8 @@ footer .legal {
 }
 @media only screen and (min-width: 992px) {
   .roadmap--item {
-    max-width: 600px;
-    padding: 0;
+    max-width: 350px;
+    padding: auto;
   }
 }
 .roadmap--item:hover .roadmap--item__img::after {
