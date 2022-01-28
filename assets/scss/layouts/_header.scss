@@ -19,11 +19,12 @@
   }
 
   @include mixins.responsive(sm) {
+    //sm->landscape mode ie:mobile L
     //css code
     padding: 2rem 4rem;
 
     h2 {
-      font-size: 7rem;
+      font-size: 1.5rem;
     }
   }
 
@@ -67,7 +68,7 @@
       font-size: 1.3rem;
     }
 
-    @include mixins.responsive(lg) {
+    @include mixins.responsive(md) {
       display: none;
       font-size: 1.3rem;
     }
@@ -112,6 +113,32 @@
 
     @include mixins.responsive(sm) {
       display: none;
+      position: fixed;
+      top: -60%;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: func.theme-colors("menu-bg");
+      z-index: -1;
+      transition: 500ms;
+
+      &.show {
+        display: block;
+        text-align: center;
+        top: 68px;
+      }
+
+      & li {
+        padding: 2rem;
+
+        a {
+          color: #fff;
+
+          &.active {
+            color: func.theme-colors("dark");
+          }
+        }
+      }
     }
 
     @include mixins.responsive(lg) {
@@ -126,6 +153,11 @@
       transition: 300ms;
 
       @include mixins.responsive(xs) {
+        font-size: 15px;
+        margin: 0 3rem;
+      }
+
+      @include mixins.responsive(sm) {
         font-size: 15px;
         margin: 0 3rem;
       }

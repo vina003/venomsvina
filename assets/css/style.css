@@ -112,7 +112,7 @@
     padding: 2rem 4rem;
   }
   .header h2 {
-    font-size: 7rem;
+    font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -158,7 +158,7 @@
     font-size: 1.3rem;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
   .header .nav-toggler {
     display: none;
     font-size: 1.3rem;
@@ -201,6 +201,28 @@
 @media only screen and (min-width: 576px) {
   .header--menu {
     display: none;
+    position: fixed;
+    top: -60%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0080ff;
+    z-index: -1;
+    transition: 500ms;
+  }
+  .header--menu.show {
+    display: block;
+    text-align: center;
+    top: 68px;
+  }
+  .header--menu li {
+    padding: 2rem;
+  }
+  .header--menu li a {
+    color: #fff;
+  }
+  .header--menu li a.active {
+    color: #010408a4;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -216,6 +238,12 @@
   transition: 300ms;
 }
 @media only screen and (max-width: 576px) {
+  .header--menu__item > a {
+    font-size: 15px;
+    margin: 0 3rem;
+  }
+}
+@media only screen and (min-width: 576px) {
   .header--menu__item > a {
     font-size: 15px;
     margin: 0 3rem;
@@ -260,15 +288,16 @@
 }
 @media only screen and (min-width: 576px) {
   .background-shapes .box1 {
-    top: 25%;
+    top: 35%;
+    left: 5%;
   }
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
   .background-shapes .box1 {
     top: 30%;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .background-shapes .box1 {
     top: 25%;
   }
@@ -289,6 +318,7 @@
 @media only screen and (min-width: 576px) {
   .background-shapes .box2 {
     top: 160%;
+    left: 75%;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -333,6 +363,11 @@
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
+@media only screen and (min-width: 576px) {
+  .background-shapes .dot1 {
+    top: 200%;
+  }
+}
 @media only screen and (min-width: 992px) {
   .background-shapes .dot1 {
     top: 90%;
@@ -352,7 +387,7 @@
 }
 @media only screen and (min-width: 576px) {
   .background-shapes .dot2 {
-    top: 25%;
+    top: 85%;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -401,14 +436,18 @@
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
+@media only screen and (min-width: 576px) {
+  .background-shapes .dot4 {
+    top: 200%;
+  }
+}
 @media only screen and (min-width: 992px) {
-  .background-shapes {
+  .background-shapes .dot4 {
     top: 50%;
     left: 40%;
   }
 }
-
-.heart1 {
+.background-shapes .heart1 {
   font-size: 1.5rem;
   position: absolute;
   top: 51%;
@@ -417,8 +456,12 @@
   color: #f428c8;
   animation: box-shape linear 5s infinite;
 }
-
-.heart2 {
+@media only screen and (min-width: 576px) {
+  .background-shapes .heart1 {
+    top: 110%;
+  }
+}
+.background-shapes .heart2 {
   font-size: 1.5rem;
   position: absolute;
   top: 55%;
@@ -427,8 +470,12 @@
   color: #6f28f4;
   animation: box-shape linear 5s infinite;
 }
-
-.circle1 {
+@media only screen and (min-width: 576px) {
+  .background-shapes .heart2 {
+    top: 110%;
+  }
+}
+.background-shapes .circle1 {
   position: absolute;
   top: 80%;
   left: 21%;
@@ -441,23 +488,23 @@
   animation: box-shape linear 5s infinite;
 }
 @media only screen and (min-width: 576px) {
-  .circle1 {
+  .background-shapes .circle1 {
     top: 160%;
+    left: 15%;
   }
 }
 @media only screen and (min-width: 768px) {
-  .circle1 {
+  .background-shapes .circle1 {
     top: 150%;
     left: 10%;
   }
 }
 @media only screen and (min-width: 992px) {
-  .circle1 {
+  .background-shapes .circle1 {
     top: 80%;
   }
 }
-
-.circle2 {
+.background-shapes .circle2 {
   position: absolute;
   top: 24%;
   left: 52%;
@@ -470,17 +517,17 @@
   animation: box-shape linear 5s infinite;
 }
 @media only screen and (min-width: 576px) {
-  .circle2 {
-    top: 25%;
-  }
-}
-@media only screen and (min-width: 576px) {
-  .circle2 {
-    top: 30%;
+  .background-shapes .circle2 {
+    top: 75%;
   }
 }
 @media only screen and (min-width: 768px) {
-  .circle2 {
+  .background-shapes .circle2 {
+    top: 35%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .background-shapes .circle2 {
     top: 25%;
   }
 }
@@ -1206,8 +1253,11 @@ footer .legal {
 }
 @media only screen and (min-width: 576px) {
   .hero-area {
-    padding: 8rem 6rem;
+    padding: 8rem 4rem;
     flex-direction: column;
+  }
+  .hero-area img {
+    width: auto;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -1221,7 +1271,7 @@ footer .legal {
     padding: 8rem 15rem;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
   .hero-area {
     padding: 8rem 20rem;
     justify-content: space-between;
@@ -1312,9 +1362,9 @@ footer .legal {
 }
 @media only screen and (min-width: 576px) {
   .about-area {
-    padding: 4rem 2rem;
+    padding: 8rem 4rem;
     flex-direction: column;
-    margin-top: 0;
+    margin-top: 2rem;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -1340,7 +1390,7 @@ footer .legal {
     width: 34rem;
   }
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
   .about-area--img {
     width: 34rem;
   }
@@ -1431,7 +1481,7 @@ footer .legal {
 }
 @media only screen and (min-width: 576px) {
   .roadmap {
-    padding: 4rem 2rem;
+    padding: 8rem 4rem;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -1639,7 +1689,7 @@ footer .legal {
 }
 @media only screen and (min-width: 576px) {
   .courses {
-    padding: 4rem 2rem;
+    padding: 8rem 4rem;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -1829,7 +1879,7 @@ footer .legal {
 }
 @media only screen and (min-width: 576px) {
   .contact {
-    padding: 4rem 2rem;
+    padding: 8rem 4rem;
   }
 }
 @media only screen and (min-width: 992px) {

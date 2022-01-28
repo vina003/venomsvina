@@ -17,8 +17,12 @@
   }
 
   @include mixins.responsive(sm) {
-    padding: 8rem 6rem;
+    padding: 8rem 4rem;
     flex-direction: column;
+
+    img {
+      width: auto;
+    }
   }
 
   @include mixins.responsive(lg) {
@@ -30,7 +34,7 @@
     padding: 8rem 15rem;
   }
 
-  @include mixins.responsive(xlg) {
+  @include mixins.responsive(xxlg) {
     padding: 8rem 20rem;
     justify-content: space-between;
   }

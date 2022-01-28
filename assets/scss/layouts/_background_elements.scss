@@ -20,14 +20,15 @@
     animation: box-shape linear 5s infinite;
 
     @include mixins.responsive(sm) {
-      top: 25%;
-    }
-
-    @include mixins.responsive(sm) {
-      top: 30%;
+      top: 35%;
+      left: 5%;
     }
 
     @include mixins.responsive(md) {
+      top: 30%;
+    }
+
+    @include mixins.responsive(lg) {
       top: 25%;
     }
   }
@@ -47,6 +48,7 @@
 
     @include mixins.responsive(sm) {
       top: 160%;
+      left: 75%;
     }
 
     @include mixins.responsive(md) {
@@ -90,6 +92,10 @@
     transform: rotate(360deg);
     animation: box-shape linear 5s infinite;
 
+    @include mixins.responsive(sm) {
+      top: 200%;
+    }
+
     @include mixins.responsive(lg) {
       top: 90%;
     }
@@ -108,7 +114,7 @@
     animation: box-shape linear 5s infinite;
 
     @include mixins.responsive(sm) {
-      top: 25%;
+      top: 85%;
     }
 
     @include mixins.responsive(md) {
@@ -154,81 +160,94 @@
     z-index: -1;
     transform: rotate(360deg);
     animation: box-shape linear 5s infinite;
+
+    @include mixins.responsive(sm) {
+      top: 200%;
+    }
+
+    @include mixins.responsive(lg) {
+      top: 50%;
+      left: 40%;
+    }
   }
 
-  @include mixins.responsive(lg) {
-    top: 50%;
-    left: 40%;
-  }
-}
+  .heart1 {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 51%;
+    left: 4%;
+    z-index: -1;
+    color: #f428c8;
+    animation: box-shape linear 5s infinite;
 
-.heart1 {
-  font-size: 1.5rem;
-  position: absolute;
-  top: 51%;
-  left: 4%;
-  z-index: -1;
-  color: #f428c8;
-  animation: box-shape linear 5s infinite;
-}
-
-.heart2 {
-  font-size: 1.5rem;
-  position: absolute;
-  top: 55%;
-  right: 8%;
-  z-index: -1;
-  color: #6f28f4;
-  animation: box-shape linear 5s infinite;
-}
-
-.circle1 {
-  position: absolute;
-  top: 80%;
-  left: 21%;
-  width: 15px;
-  height: 15px;
-  border: 3px solid #f4284a;
-  border-radius: 50%;
-  z-index: -1;
-  transform: rotate(360deg);
-  animation: box-shape linear 5s infinite;
-
-  @include mixins.responsive(sm) {
-    top: 160%;
+    @include mixins.responsive(sm) {
+      top: 110%;
+    }
   }
 
-  @include mixins.responsive(md) {
-    top: 150%;
-    left: 10%;
+  .heart2 {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 55%;
+    right: 8%;
+    z-index: -1;
+    color: #6f28f4;
+    animation: box-shape linear 5s infinite;
+
+    @include mixins.responsive(sm) {
+      top: 110%;
+    }
   }
 
-  @include mixins.responsive(lg) {
+  .circle1 {
+    position: absolute;
     top: 80%;
+    left: 21%;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #f4284a;
+    border-radius: 50%;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 5s infinite;
+
+    @include mixins.responsive(sm) {
+      top: 160%;
+      left: 15%;
+    }
+
+    @include mixins.responsive(md) {
+      top: 150%;
+      left: 10%;
+    }
+
+    @include mixins.responsive(lg) {
+      top: 80%;
+    }
   }
-}
 
-.circle2 {
-  position: absolute;
-  top: 24%;
-  left: 52%;
-  width: 15px;
-  height: 15px;
-  border: 3px solid #b4d831f8;
-  border-radius: 50%;
-  z-index: -1;
-  transform: rotate(360deg);
-  animation: box-shape linear 5s infinite;
+  .circle2 {
+    position: absolute;
+    top: 24%;
+    left: 52%;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #b4d831f8;
+    border-radius: 50%;
+    z-index: -1;
+    transform: rotate(360deg);
+    animation: box-shape linear 5s infinite;
 
-  @include mixins.responsive(sm) {
-    top: 25%;
-  }
+    @include mixins.responsive(sm) {
+      top: 75%;
+    }
 
-  @include mixins.responsive(sm) {
-    top: 30%;
-  }
+    @include mixins.responsive(md) {
+      top: 35%;
+    }
 
-  @include mixins.responsive(md) {
-    top: 25%;
+    @include mixins.responsive(lg) {
+      top: 25%;
+    }
   }
 }

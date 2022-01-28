@@ -17,9 +17,9 @@
   }
 
   @include mixins.responsive(sm) {
-    padding: 4rem 2rem;
+    padding: 8rem 4rem;
     flex-direction: column;
-    margin-top: 0;
+    margin-top: 2rem;
   }
 
   @include mixins.responsive(lg) {
@@ -42,7 +42,7 @@
       width: 34rem;
     }
 
-    @include mixins.responsive(sm) {
+    @include mixins.responsive(md) {
       width: 34rem;
     }
 
