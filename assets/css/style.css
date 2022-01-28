@@ -273,6 +273,11 @@
     display: none;
   }
 }
+@media only screen and (min-width: 576px) {
+  .background-shapes {
+    display: none;
+  }
+}
 .background-shapes .box1 {
   position: absolute;
   top: 20%;

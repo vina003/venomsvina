@@ -6,6 +6,10 @@
     display: none;
   }
 
+  @include mixins.responsive(sm) {
+    display: none;
+  }
+
   .box1 {
     position: absolute;
     top: 20%;
