@@ -1384,7 +1384,12 @@ footer .legal {
 }
 @media only screen and (min-width: 1200px) {
   .roadmap {
-    padding: 8rem 15rem;
+    padding: 8rem 4rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .roadmap {
+    padding: 8rem 20rem;
   }
 }
 .roadmap--heading {
@@ -1576,7 +1581,7 @@ footer .legal {
 }
 @media only screen and (min-width: 1200px) {
   .courses {
-    padding: 8rem 15rem;
+    padding: 8rem 4rem;
   }
 }
 @media only screen and (min-width: 1400px) {
