@@ -16,6 +16,10 @@
     padding: 8rem 6rem;
   }
 
+  @include mixins.responsive(xlg) {
+    padding: 10rem 12rem;
+  }
+
   &-card {
     display: flex;
     justify-content: space-between;

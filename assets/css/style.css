@@ -119,6 +119,11 @@
     padding: 1rem 6rem;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .header {
+    padding: 1rem 15rem;
+  }
+}
 @media only screen and (max-width: 576px) {
   .header h2 > span {
     font-size: 1rem;
@@ -1266,8 +1271,22 @@ footer .legal {
     width: 15rem;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .hero-area {
+    padding: 8rem 6rem;
+    flex-direction: row;
+  }
+  .hero-area img {
+    width: 35rem;
+  }
+}
 .hero-area--contents {
   max-width: 34rem;
+}
+@media only screen and (min-width: 992px) {
+  .hero-area--contents {
+    max-width: 30rem;
+  }
 }
 @media only screen and (min-width: 992px) {
   .hero-area--contents {
@@ -1296,6 +1315,11 @@ footer .legal {
     font-size: 2rem;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .hero-area--contents--title {
+    font-size: 2rem;
+  }
+}
 .hero-area--contents--title > span {
   font-size: 1.5rem;
 }
@@ -1312,6 +1336,11 @@ footer .legal {
 @media only screen and (min-width: 992px) {
   .hero-area--contents--desc {
     font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero-area--contents--desc {
+    font-size: 2rem;
   }
 }
 
@@ -1464,6 +1493,11 @@ footer .legal {
 @media only screen and (min-width: 992px) {
   .roadmap {
     padding: 8rem 3rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .roadmap {
+    padding: 8rem 6rem;
   }
 }
 .roadmap--heading {
@@ -1669,6 +1703,11 @@ footer .legal {
     padding: 8rem 3rem;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .courses {
+    padding: 8rem 12rem;
+  }
+}
 .courses--heading {
   text-align: center;
 }
@@ -1692,6 +1731,11 @@ footer .legal {
 @media only screen and (min-width: 992px) {
   .courses--heading h2 {
     font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .courses--heading h2 {
+    font-size: 4rem;
   }
 }
 .courses--heading p {
@@ -1822,6 +1866,11 @@ footer .legal {
 @media only screen and (min-width: 992px) {
   .contact {
     padding: 8rem 6rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .contact {
+    padding: 10rem 12rem;
   }
 }
 .contact-card {
