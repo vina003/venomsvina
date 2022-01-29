@@ -109,7 +109,7 @@
 }
 @media only screen and (min-width: 576px) {
   .header {
-    padding: 1rem 4rem;
+    padding: 1rem 2rem;
   }
   .header h2 {
     font-size: 1.5rem;
@@ -1257,7 +1257,7 @@ footer .legal {
     flex-direction: column;
   }
   .hero-area img {
-    width: auto;
+    width: 20rem;
   }
 }
 @media only screen and (min-width: 992px) {
