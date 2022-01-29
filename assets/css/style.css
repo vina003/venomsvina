@@ -109,7 +109,7 @@
 }
 @media only screen and (min-width: 576px) {
   .header {
-    padding: 2rem 4rem;
+    padding: 1rem 4rem;
   }
   .header h2 {
     font-size: 1.5rem;
@@ -186,7 +186,7 @@
   .header--menu.show {
     display: block;
     text-align: center;
-    top: 68px;
+    top: 64px;
   }
   .header--menu li {
     padding: 2rem;
@@ -195,25 +195,25 @@
     color: #fff;
   }
   .header--menu li a.active {
-    color: #010408a4;
+    color: #000;
   }
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 576px) and (max-width: 768px) {
   .header--menu {
     display: none;
     position: fixed;
-    top: -60%;
+    top: -100%;
     left: 0;
     width: 100vw;
     height: 100vh;
     background-color: #0080ff;
-    z-index: -1;
+    z-index: 1;
     transition: 500ms;
   }
   .header--menu.show {
     display: block;
     text-align: center;
-    top: 68px;
+    top: 64px;
   }
   .header--menu li {
     padding: 2rem;
@@ -222,7 +222,7 @@
     color: #fff;
   }
   .header--menu li a.active {
-    color: #010408a4;
+    color: #000;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -291,18 +291,18 @@
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
   .background-shapes .box1 {
     top: 35%;
     left: 5%;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .background-shapes .box1 {
     top: 30%;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   .background-shapes .box1 {
     top: 25%;
   }
@@ -320,19 +320,19 @@
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
   .background-shapes .box2 {
     top: 160%;
     left: 75%;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .background-shapes .box2 {
     top: 150%;
     left: 80%;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   .background-shapes .box2 {
     top: 90%;
     left: 80%;
@@ -351,7 +351,7 @@
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
   .background-shapes .box3 {
     top: 35%;
   }
@@ -368,7 +368,7 @@
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
   .background-shapes .dot1 {
     top: 200%;
   }
@@ -390,12 +390,12 @@
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
   .background-shapes .dot2 {
     top: 85%;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .background-shapes .dot2 {
     top: 30%;
     left: 75%;
@@ -413,18 +413,18 @@
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
   .background-shapes .dot3 {
     top: 160%;
     left: 45%;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .background-shapes .dot3 {
     top: 150%;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   .background-shapes .dot3 {
     top: 80%;
   }
@@ -441,7 +441,7 @@
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
   .background-shapes .dot4 {
     top: 200%;
   }
@@ -461,7 +461,7 @@
   color: #f428c8;
   animation: box-shape linear 5s infinite;
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
   .background-shapes .heart1 {
     top: 110%;
   }
@@ -475,7 +475,7 @@
   color: #6f28f4;
   animation: box-shape linear 5s infinite;
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
   .background-shapes .heart2 {
     top: 110%;
   }
@@ -492,19 +492,19 @@
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
   .background-shapes .circle1 {
     top: 160%;
     left: 15%;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .background-shapes .circle1 {
     top: 150%;
     left: 10%;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   .background-shapes .circle1 {
     top: 80%;
   }
@@ -521,17 +521,17 @@
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
   .background-shapes .circle2 {
     top: 75%;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .background-shapes .circle2 {
     top: 35%;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   .background-shapes .circle2 {
     top: 25%;
   }
