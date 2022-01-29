@@ -22,6 +22,12 @@
     margin-top: 2rem;
   }
 
+  @include mixins.responsive(md) {
+    padding: 6rem 2rem;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
   @include mixins.responsive(lg) {
     padding: 8rem 6rem;
     flex-direction: row;

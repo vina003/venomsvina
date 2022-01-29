@@ -25,6 +25,15 @@
     }
   }
 
+  @include mixins.responsive(md) {
+    padding: 5rem 2rem;
+    flex-direction: column;
+
+    img {
+      width: 30rem;
+    }
+  }
+
   @include mixins.responsive(lg) {
     padding: 8rem 6rem;
     flex-direction: row;

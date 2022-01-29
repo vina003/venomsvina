@@ -160,8 +160,8 @@
 }
 @media only screen and (min-width: 768px) {
   .header .nav-toggler {
-    display: none;
-    font-size: 1.3rem;
+    display: block;
+    font-size: 1.5rem;
   }
 }
 .header--menu {
@@ -225,6 +225,33 @@
     color: #000;
   }
 }
+@media only screen and (min-width: 768px) {
+  .header--menu {
+    display: none;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0080ff;
+    z-index: 1;
+    transition: 500ms;
+  }
+  .header--menu.show {
+    display: block;
+    text-align: center;
+    top: 64px;
+  }
+  .header--menu li {
+    padding: 2rem;
+  }
+  .header--menu li a {
+    color: #fff;
+  }
+  .header--menu li a.active {
+    color: #000;
+  }
+}
 @media only screen and (min-width: 992px) {
   .header--menu {
     display: flex;
@@ -246,6 +273,12 @@
 @media only screen and (min-width: 576px) {
   .header--menu__item > a {
     font-size: 15px;
+    margin: 0 3rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header--menu__item > a {
+    font-size: 25px;
     margin: 0 3rem;
   }
 }
@@ -390,6 +423,12 @@
     top: 85%;
   }
 }
+@media only screen and (min-width: 768px) {
+  .background-shapes .dot2 {
+    top: 90%;
+    left: 30%;
+  }
+}
 @media only screen and (min-width: 992px) {
   .background-shapes .dot2 {
     top: 30%;
@@ -412,6 +451,12 @@
   .background-shapes .dot3 {
     top: 220%;
     left: 45%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .background-shapes .dot3 {
+    top: 90%;
+    left: 80%;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -461,6 +506,11 @@
     top: 110%;
   }
 }
+@media only screen and (min-width: 768px) {
+  .background-shapes .heart1 {
+    top: 60%;
+  }
+}
 .background-shapes .heart2 {
   font-size: 1.5rem;
   position: absolute;
@@ -473,6 +523,11 @@
 @media only screen and (min-width: 576px) {
   .background-shapes .heart2 {
     top: 110%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .background-shapes .heart2 {
+    top: 60%;
   }
 }
 .background-shapes .circle1 {
@@ -519,6 +574,11 @@
 @media only screen and (min-width: 576px) {
   .background-shapes .circle2 {
     top: 85%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .background-shapes .circle2 {
+    top: 90%;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -1260,6 +1320,15 @@ footer .legal {
     width: 20rem;
   }
 }
+@media only screen and (min-width: 768px) {
+  .hero-area {
+    padding: 5rem 2rem;
+    flex-direction: column;
+  }
+  .hero-area img {
+    width: 30rem;
+  }
+}
 @media only screen and (min-width: 992px) {
   .hero-area {
     padding: 8rem 6rem;
@@ -1360,6 +1429,13 @@ footer .legal {
 @media only screen and (min-width: 576px) {
   .about-area {
     padding: 5rem 2rem;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .about-area {
+    padding: 6rem 2rem;
     flex-direction: column;
     margin-top: 2rem;
   }
@@ -1477,6 +1553,11 @@ footer .legal {
   }
 }
 @media only screen and (min-width: 576px) {
+  .roadmap {
+    padding: 5rem 2rem;
+  }
+}
+@media only screen and (min-width: 768px) {
   .roadmap {
     padding: 5rem 2rem;
   }
@@ -1685,6 +1766,11 @@ footer .legal {
   }
 }
 @media only screen and (min-width: 576px) {
+  .courses {
+    padding: 5rem 2rem;
+  }
+}
+@media only screen and (min-width: 768px) {
   .courses {
     padding: 5rem 2rem;
   }
