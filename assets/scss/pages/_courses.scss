@@ -107,6 +107,10 @@
       max-width: 250px;
     }
 
+    @include mixins.responsive(xlg) {
+      max-width: 280px;
+    }
+
     @include mixins.responsive(xxlg) {
       max-width: 300px;
     }
@@ -116,6 +120,10 @@
 
       @include mixins.responsive(lg) {
         max-width: 250px;
+      }
+
+      @include mixins.responsive(xlg) {
+        max-width: 300px;
       }
 
       @include mixins.responsive(xxlg) {

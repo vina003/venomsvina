@@ -1860,6 +1860,11 @@ footer .legal {
     max-width: 250px;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .courses-card {
+    max-width: 280px;
+  }
+}
 @media only screen and (min-width: 1400px) {
   .courses-card {
     max-width: 300px;
@@ -1871,6 +1876,11 @@ footer .legal {
 @media only screen and (min-width: 992px) {
   .courses-card--img {
     max-width: 250px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .courses-card--img {
+    max-width: 300px;
   }
 }
 @media only screen and (min-width: 1400px) {
