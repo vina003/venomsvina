@@ -17,7 +17,11 @@
   }
 
   @include mixins.responsive(xlg) {
-    padding: 10rem 12rem;
+    padding: 8rem 12rem;
+  }
+
+  @include mixins.responsive(xlg) {
+    padding: 8rem 12rem;
   }
 
   &-card {
@@ -62,6 +66,10 @@
         @include mixins.responsive(sm) {
           font-size: 1rem;
         }
+
+        @include mixins.responsive(sm) {
+          font-size: 1.2rem;
+        }
       }
 
       p {
@@ -74,6 +82,10 @@
 
         @include mixins.responsive(sm) {
           font-size: 0.8rem;
+        }
+
+        @include mixins.responsive(sm) {
+          font-size: 1rem;
         }
       }
     }
