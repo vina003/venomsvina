@@ -273,11 +273,6 @@
     display: none;
   }
 }
-@media only screen and (min-width: 576px) {
-  .background-shapes {
-    display: none;
-  }
-}
 .background-shapes .box1 {
   position: absolute;
   top: 20%;
@@ -291,10 +286,10 @@
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .background-shapes .box1 {
     top: 35%;
-    left: 5%;
+    left: 2%;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -320,9 +315,9 @@
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .background-shapes .box2 {
-    top: 160%;
+    top: 220%;
     left: 75%;
   }
 }
@@ -351,7 +346,7 @@
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .background-shapes .box3 {
     top: 35%;
   }
@@ -368,7 +363,7 @@
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .background-shapes .dot1 {
     top: 200%;
   }
@@ -390,7 +385,7 @@
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .background-shapes .dot2 {
     top: 85%;
   }
@@ -413,9 +408,9 @@
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .background-shapes .dot3 {
-    top: 160%;
+    top: 220%;
     left: 45%;
   }
 }
@@ -441,7 +436,7 @@
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .background-shapes .dot4 {
     top: 200%;
   }
@@ -461,7 +456,7 @@
   color: #f428c8;
   animation: box-shape linear 5s infinite;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .background-shapes .heart1 {
     top: 110%;
   }
@@ -475,7 +470,7 @@
   color: #6f28f4;
   animation: box-shape linear 5s infinite;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .background-shapes .heart2 {
     top: 110%;
   }
@@ -492,9 +487,9 @@
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .background-shapes .circle1 {
-    top: 160%;
+    top: 220%;
     left: 15%;
   }
 }
@@ -521,9 +516,9 @@
   transform: rotate(360deg);
   animation: box-shape linear 5s infinite;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .background-shapes .circle2 {
-    top: 75%;
+    top: 85%;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -1258,7 +1253,7 @@ footer .legal {
 }
 @media only screen and (min-width: 576px) {
   .hero-area {
-    padding: 8rem 4rem;
+    padding: 5rem 2rem;
     flex-direction: column;
   }
   .hero-area img {
@@ -1290,62 +1285,59 @@ footer .legal {
     max-width: 30rem;
   }
 }
-.hero-area--title {
+.hero-area--contents--title {
   font-size: 2rem;
   font-weight: 600;
 }
 @media only screen and (max-width: 576px) {
-  .hero-area--title {
+  .hero-area--contents--title {
     font-size: 1.3rem;
   }
-  .hero-area--title > span {
+  .hero-area--contents--title > span {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 576px) {
-  .hero-area--title {
-    font-size: 1.5rem;
-  }
-  .hero-area--title > span {
-    font-size: 1.5rem;
+  .hero-area--contents--title h2 {
+    font-size: 1rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .hero-area--title {
+  .hero-area--contents--title {
     font-size: 1.5rem;
   }
-  .hero-area--title > span {
+  .hero-area--contents--title > span {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .hero-area--title {
+  .hero-area--contents--title {
     font-size: 2.5rem;
   }
-  .hero-area--title > span {
+  .hero-area--contents--title > span {
     font-size: 3rem;
   }
 }
-.hero-area--title > span {
+.hero-area--contents--title > span {
   font-size: 1.5rem;
 }
-.hero-area--desc {
+.hero-area--contents--desc {
   margin-top: 1rem;
   font-size: 1.2rem;
   line-height: 1.8;
 }
 @media only screen and (max-width: 576px) {
-  .hero-area--desc {
+  .hero-area--contents--desc {
     font-size: 1.2rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .hero-area--desc {
+  .hero-area--contents--desc {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .hero-area--desc {
+  .hero-area--contents--desc {
     font-size: 1.5rem;
   }
 }
@@ -1367,7 +1359,7 @@ footer .legal {
 }
 @media only screen and (min-width: 576px) {
   .about-area {
-    padding: 8rem 4rem;
+    padding: 5rem 2rem;
     flex-direction: column;
     margin-top: 2rem;
   }
@@ -1392,7 +1384,7 @@ footer .legal {
 }
 @media only screen and (min-width: 576px) {
   .about-area--img {
-    width: 34rem;
+    width: 32rem;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -1486,7 +1478,7 @@ footer .legal {
 }
 @media only screen and (min-width: 576px) {
   .roadmap {
-    padding: 8rem 4rem;
+    padding: 5rem 2rem;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -1694,7 +1686,7 @@ footer .legal {
 }
 @media only screen and (min-width: 576px) {
   .courses {
-    padding: 8rem 4rem;
+    padding: 5rem 2rem;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -1884,7 +1876,7 @@ footer .legal {
 }
 @media only screen and (min-width: 576px) {
   .contact {
-    padding: 8rem 4rem;
+    padding: 5rem 2rem;
   }
 }
 @media only screen and (min-width: 992px) {

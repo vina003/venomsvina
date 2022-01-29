@@ -6,10 +6,6 @@
     display: none;
   }
 
-  @include mixins.responsive(sm) {
-    display: none;
-  }
-
   .box1 {
     position: absolute;
     top: 20%;
@@ -23,9 +19,9 @@
     transform: rotate(360deg);
     animation: box-shape linear 5s infinite;
 
-    @include mixins.responsive(md) {
+    @include mixins.responsive(sm) {
       top: 35%;
-      left: 5%;
+      left: 2%;
     }
 
     @include mixins.responsive(lg) {
@@ -50,8 +46,8 @@
     transform: rotate(360deg);
     animation: box-shape linear 5s infinite;
 
-    @include mixins.responsive(md) {
-      top: 160%;
+    @include mixins.responsive(sm) {
+      top: 220%;
       left: 75%;
     }
 
@@ -79,7 +75,7 @@
     transform: rotate(360deg);
     animation: box-shape linear 5s infinite;
 
-    @include mixins.responsive(md) {
+    @include mixins.responsive(sm) {
       top: 35%;
     }
   }
@@ -96,7 +92,7 @@
     transform: rotate(360deg);
     animation: box-shape linear 5s infinite;
 
-    @include mixins.responsive(md) {
+    @include mixins.responsive(sm) {
       top: 200%;
     }
 
@@ -117,7 +113,7 @@
     transform: rotate(360deg);
     animation: box-shape linear 5s infinite;
 
-    @include mixins.responsive(md) {
+    @include mixins.responsive(sm) {
       top: 85%;
     }
 
@@ -139,8 +135,8 @@
     transform: rotate(360deg);
     animation: box-shape linear 5s infinite;
 
-    @include mixins.responsive(md) {
-      top: 160%;
+    @include mixins.responsive(sm) {
+      top: 220%;
       left: 45%;
     }
 
@@ -165,7 +161,7 @@
     transform: rotate(360deg);
     animation: box-shape linear 5s infinite;
 
-    @include mixins.responsive(md) {
+    @include mixins.responsive(sm) {
       top: 200%;
     }
 
@@ -184,7 +180,7 @@
     color: #f428c8;
     animation: box-shape linear 5s infinite;
 
-    @include mixins.responsive(md) {
+    @include mixins.responsive(sm) {
       top: 110%;
     }
   }
@@ -198,7 +194,7 @@
     color: #6f28f4;
     animation: box-shape linear 5s infinite;
 
-    @include mixins.responsive(md) {
+    @include mixins.responsive(sm) {
       top: 110%;
     }
   }
@@ -215,8 +211,8 @@
     transform: rotate(360deg);
     animation: box-shape linear 5s infinite;
 
-    @include mixins.responsive(md) {
-      top: 160%;
+    @include mixins.responsive(sm) {
+      top: 220%;
       left: 15%;
     }
 
@@ -242,8 +238,8 @@
     transform: rotate(360deg);
     animation: box-shape linear 5s infinite;
 
-    @include mixins.responsive(md) {
-      top: 75%;
+    @include mixins.responsive(sm) {
+      top: 85%;
     }
 
     @include mixins.responsive(lg) {

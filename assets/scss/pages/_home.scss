@@ -17,7 +17,7 @@
   }
 
   @include mixins.responsive(sm) {
-    padding: 8rem 4rem;
+    padding: 5rem 2rem;
     flex-direction: column;
 
     img {
@@ -45,60 +45,59 @@
     @include mixins.responsive(lg) {
       max-width: 30rem;
     }
-  }
 
-  &--title {
-    font-size: 2rem;
-    font-weight: 600;
+    &--title {
+      font-size: 2rem;
+      font-weight: 600;
 
-    @include mixins.responsive(xs) {
-      font-size: 1.3rem;
+      @include mixins.responsive(xs) {
+        font-size: 1.3rem;
+        & > span {
+          font-size: 1.5rem;
+        }
+      }
+
+      @include mixins.responsive(sm) {
+        h2 {
+          font-size: 1rem;
+        }
+      }
+
+      @include mixins.responsive(lg) {
+        font-size: 1.5rem;
+        & > span {
+          font-size: 1.5rem;
+        }
+      }
+
+      @include mixins.responsive(xlg) {
+        font-size: 2.5rem;
+        & > span {
+          font-size: 3rem;
+        }
+      }
+
       & > span {
         font-size: 1.5rem;
       }
     }
 
-    @include mixins.responsive(sm) {
-      font-size: 1.5rem;
-      & > span {
-        font-size: 1.5rem;
-      }
-    }
-
-    @include mixins.responsive(lg) {
-      font-size: 1.5rem;
-      & > span {
-        font-size: 1.5rem;
-      }
-    }
-
-    @include mixins.responsive(xlg) {
-      font-size: 2.5rem;
-      & > span {
-        font-size: 3rem;
-      }
-    }
-
-    & > span {
-      font-size: 1.5rem;
-    }
-  }
-
-  &--desc {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    line-height: 1.8;
-
-    @include mixins.responsive(xs) {
+    &--desc {
+      margin-top: 1rem;
       font-size: 1.2rem;
-    }
+      line-height: 1.8;
 
-    @include mixins.responsive(lg) {
-      font-size: 1rem;
-    }
+      @include mixins.responsive(xs) {
+        font-size: 1.2rem;
+      }
 
-    @include mixins.responsive(xlg) {
-      font-size: 1.5rem;
+      @include mixins.responsive(lg) {
+        font-size: 1rem;
+      }
+
+      @include mixins.responsive(xlg) {
+        font-size: 1.5rem;
+      }
     }
   }
 }

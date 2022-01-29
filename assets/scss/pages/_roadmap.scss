@@ -19,7 +19,7 @@
   }
 
   @include mixins.responsive(sm) {
-    padding: 8rem 4rem;
+    padding: 5rem 2rem;
   }
 
   @include mixins.responsive(lg) {
