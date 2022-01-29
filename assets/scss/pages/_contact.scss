@@ -42,7 +42,7 @@
 
     img {
       @include mixins.responsive(lg) {
-        width: 30rem;
+        width: 25rem;
       }
     }
 

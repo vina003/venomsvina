@@ -52,7 +52,7 @@
 }
 .btn-primary {
   background-color: #1a1de2;
-  color: #fff;
+  color: #fff9f9;
 }
 .btn-primary:hover {
   background-color: #2225b9;
@@ -97,22 +97,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #90f06a;
+  border-bottom: 1px solid #eee;
 }
 @media only screen and (max-width: 576px) {
   .header {
-    padding: 1.2rem 1rem;
-  }
-  .header h2 {
-    font-size: 1.2rem;
+    padding: 1rem 2rem;
   }
 }
 @media only screen and (min-width: 576px) {
   .header {
     padding: 1rem 2rem;
-  }
-  .header h2 {
-    font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -125,20 +119,12 @@
     padding: 1rem 6rem;
   }
 }
-@media only screen and (min-width: 1200px) {
-  .header {
-    padding: 1rem 13rem;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .header {
-    padding: 1rem 20rem;
-  }
-}
-.header h2 > span {
-  font-size: 1rem;
-}
 @media only screen and (max-width: 576px) {
+  .header h2 > span {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 992px) {
   .header h2 > span {
     font-size: 1rem;
   }
@@ -158,10 +144,9 @@
     font-size: 1.3rem;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .header .nav-toggler {
-    display: block;
-    font-size: 1.5rem;
+    display: none;
   }
 }
 .header--menu {
@@ -169,7 +154,6 @@
   align-items: center;
   list-style: none;
   text-transform: uppercase;
-  font-weight: bolder;
 }
 @media only screen and (max-width: 576px) {
   .header--menu {
@@ -225,62 +209,21 @@
     color: #000;
   }
 }
-@media only screen and (min-width: 768px) {
-  .header--menu {
-    display: none;
-    position: fixed;
-    top: -100%;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #0080ff;
-    z-index: 1;
-    transition: 500ms;
-  }
-  .header--menu.show {
-    display: block;
-    text-align: center;
-    top: 64px;
-  }
-  .header--menu li {
-    padding: 2rem;
-  }
-  .header--menu li a {
-    color: #fff;
-  }
-  .header--menu li a.active {
-    color: #000;
-  }
-}
 @media only screen and (min-width: 992px) {
   .header--menu {
     display: flex;
   }
 }
 .header--menu__item > a {
-  margin-right: 5rem;
-  font-size: 16px;
+  margin-right: 1.2rem;
+  font-size: 14px;
+  font-weight: 600;
   text-decoration: none;
-  color: #242424;
-  transition: 300ms;
+  color: #010408a4;
+  transition: 200ms;
 }
-@media only screen and (max-width: 576px) {
-  .header--menu__item > a {
-    font-size: 15px;
-    margin: 0 3rem;
-  }
-}
-@media only screen and (min-width: 576px) {
-  .header--menu__item > a {
-    font-size: 15px;
-    margin: 0 3rem;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .header--menu__item > a {
-    font-size: 25px;
-    margin: 0 3rem;
-  }
+.header--menu__item > a > b {
+  color: #fff;
 }
 .header--menu__item > a:hover {
   color: #1a1de2;
@@ -295,6 +238,7 @@
   right: 0;
   width: 100%;
   background-color: #fff;
+  box-shadow: 1px 1px 2px 0 #e6e6e6;
   z-index: 999;
 }
 
@@ -330,11 +274,6 @@
     top: 30%;
   }
 }
-@media only screen and (min-width: 1200px) {
-  .background-shapes .box1 {
-    top: 25%;
-  }
-}
 .background-shapes .box2 {
   position: absolute;
   top: 25%;
@@ -356,13 +295,7 @@
 }
 @media only screen and (min-width: 992px) {
   .background-shapes .box2 {
-    top: 150%;
-    left: 80%;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .background-shapes .box2 {
-    top: 90%;
+    top: 70%;
     left: 80%;
   }
 }
@@ -380,6 +313,11 @@
   animation: box-shape linear 5s infinite;
 }
 @media only screen and (min-width: 576px) {
+  .background-shapes .box3 {
+    top: 35%;
+  }
+}
+@media only screen and (min-width: 992px) {
   .background-shapes .box3 {
     top: 35%;
   }
@@ -403,7 +341,7 @@
 }
 @media only screen and (min-width: 992px) {
   .background-shapes .dot1 {
-    top: 90%;
+    top: 20%;
   }
 }
 .background-shapes .dot2 {
@@ -488,7 +426,7 @@
 }
 @media only screen and (min-width: 992px) {
   .background-shapes .dot4 {
-    top: 50%;
+    top: 70%;
     left: 40%;
   }
 }
@@ -550,13 +488,8 @@
 }
 @media only screen and (min-width: 992px) {
   .background-shapes .circle1 {
-    top: 150%;
+    top: 70%;
     left: 10%;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .background-shapes .circle1 {
-    top: 80%;
   }
 }
 .background-shapes .circle2 {
@@ -583,12 +516,7 @@
 }
 @media only screen and (min-width: 992px) {
   .background-shapes .circle2 {
-    top: 35%;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .background-shapes .circle2 {
-    top: 25%;
+    top: 80%;
   }
 }
 
@@ -1331,23 +1259,15 @@ footer .legal {
 }
 @media only screen and (min-width: 992px) {
   .hero-area {
-    padding: 8rem 6rem;
+    padding: 8rem 3rem;
     flex-direction: row;
   }
-}
-@media only screen and (min-width: 1200px) {
-  .hero-area {
-    padding: 8rem 15rem;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .hero-area {
-    padding: 8rem 20rem;
-    justify-content: space-between;
+  .hero-area img {
+    width: 15rem;
   }
 }
 .hero-area--contents {
-  max-width: 38rem;
+  max-width: 34rem;
 }
 @media only screen and (min-width: 992px) {
   .hero-area--contents {
@@ -1373,18 +1293,7 @@ footer .legal {
 }
 @media only screen and (min-width: 992px) {
   .hero-area--contents--title {
-    font-size: 1.5rem;
-  }
-  .hero-area--contents--title > span {
-    font-size: 1.5rem;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .hero-area--contents--title {
-    font-size: 2.5rem;
-  }
-  .hero-area--contents--title > span {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 .hero-area--contents--title > span {
@@ -1402,12 +1311,7 @@ footer .legal {
 }
 @media only screen and (min-width: 992px) {
   .hero-area--contents--desc {
-    font-size: 1rem;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .hero-area--contents--desc {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -1442,15 +1346,10 @@ footer .legal {
 }
 @media only screen and (min-width: 992px) {
   .about-area {
-    padding: 8rem 6rem;
+    padding: 8rem 3rem;
     flex-direction: row;
     margin-top: 0;
     align-items: center;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .about-area {
-    padding: 8rem 15rem;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -1564,17 +1463,7 @@ footer .legal {
 }
 @media only screen and (min-width: 992px) {
   .roadmap {
-    padding: 8rem 6rem;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .roadmap {
-    padding: 8rem 4rem;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .roadmap {
-    padding: 8rem 20rem;
+    padding: 8rem 3rem;
   }
 }
 .roadmap--heading {
@@ -1661,7 +1550,7 @@ footer .legal {
 }
 @media only screen and (min-width: 992px) {
   .roadmap--item__contents h5 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 .roadmap--item__contents p {
@@ -1777,17 +1666,7 @@ footer .legal {
 }
 @media only screen and (min-width: 992px) {
   .courses {
-    padding: 8rem 4rem;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .courses {
-    padding: 8rem 4rem;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .courses {
-    padding: 8rem 10rem;
+    padding: 8rem 3rem;
   }
 }
 .courses--heading {
@@ -1810,7 +1689,7 @@ footer .legal {
     font-size: 1.5rem;
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 992px) {
   .courses--heading h2 {
     font-size: 2rem;
   }
@@ -1826,11 +1705,6 @@ footer .legal {
 @media only screen and (min-width: 576px) {
   .courses--heading p {
     font-size: 0.9rem;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .courses--heading p {
-    font-size: 1rem;
   }
 }
 .courses-cards {
@@ -1862,12 +1736,7 @@ footer .legal {
 }
 @media only screen and (min-width: 992px) {
   .courses-card {
-    max-width: 380px;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .courses-card {
-    max-width: 350px;
+    max-width: 250px;
   }
 }
 .courses-card--img {
@@ -1875,12 +1744,7 @@ footer .legal {
 }
 @media only screen and (min-width: 992px) {
   .courses-card--img {
-    width: 380px;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .courses-card--img {
-    width: 350px;
+    max-width: 250px;
   }
 }
 .courses-card--body {
@@ -1901,12 +1765,7 @@ footer .legal {
 }
 @media only screen and (min-width: 992px) {
   .courses-card--body h4 {
-    font-size: 1rem;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .courses-card--body h4 {
-    font-size: 1.5rem;
+    font-size: 0.7rem;
   }
 }
 .courses-card--body p {
@@ -1926,11 +1785,6 @@ footer .legal {
 @media only screen and (min-width: 992px) {
   .courses-card--body p {
     font-size: 0.8rem;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .courses-card--body p {
-    font-size: 1rem;
   }
 }
 .courses-card a {
@@ -1999,7 +1853,7 @@ footer .legal {
 }
 @media only screen and (min-width: 992px) {
   .contact-card img {
-    width: 30rem;
+    width: 25rem;
   }
 }
 .contact-card--contents {

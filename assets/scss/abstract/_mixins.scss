@@ -27,13 +27,15 @@
 //}
 
 @mixin responsive($breakpoint, $scope: "") {
-  // X-Small devices (portrait phones, less than 576px)
   @if $breakpoint == xs {
+    // X-Small devices (portrait phones, less than 576px) (xs)
+
     @media only screen and (max-width: 576px) {
       @content;
     }
   } @else if $breakpoint == sm {
     // Small devices (landscape phones, 576px and up)
+
     @if $scope == "sm-md" {
       @media only screen and (min-width: 576px) and (max-width: 768px) {
         @content;
@@ -59,7 +61,7 @@
       @content;
     }
   } @else if $breakpoint == xxlg {
-    // XX-Large devices (large desktops, 1400px and up)
+    // XX-Large devices (larger desktops, 1400px and up)
     @media only screen and (min-width: 1400px) {
       @content;
     }

@@ -35,21 +35,15 @@
   }
 
   @include mixins.responsive(lg) {
-    padding: 8rem 6rem;
+    padding: 8rem 3rem;
     flex-direction: row;
-  }
-
-  @include mixins.responsive(xlg) {
-    padding: 8rem 15rem;
-  }
-
-  @include mixins.responsive(xxlg) {
-    padding: 8rem 20rem;
-    justify-content: space-between;
+    img {
+      width: 15rem;
+    }
   }
 
   &--contents {
-    max-width: 38rem;
+    max-width: 34rem;
 
     @include mixins.responsive(lg) {
       max-width: 30rem;
@@ -73,17 +67,7 @@
       }
 
       @include mixins.responsive(lg) {
-        font-size: 1.5rem;
-        & > span {
-          font-size: 1.5rem;
-        }
-      }
-
-      @include mixins.responsive(xlg) {
-        font-size: 2.5rem;
-        & > span {
-          font-size: 3rem;
-        }
+        font-size: 2rem;
       }
 
       & > span {
@@ -101,11 +85,7 @@
       }
 
       @include mixins.responsive(lg) {
-        font-size: 1rem;
-      }
-
-      @include mixins.responsive(xlg) {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
       }
     }
   }

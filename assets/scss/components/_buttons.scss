@@ -16,7 +16,7 @@
   &-primary {
     @extend .btn;
     background-color: func.theme-colors();
-    color: #fff;
+    color: #fff9f9;
 
     &:hover {
       background-color: func.theme-colors("primary-hover");

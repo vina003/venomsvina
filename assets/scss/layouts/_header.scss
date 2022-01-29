@@ -1,4 +1,4 @@
-@use "../abstract/variable" as var; //modules
+@use "../abstract/variable" as var;
 @use "../abstract/functions" as func;
 @use "../abstract/mixins" as mixins;
 
@@ -7,50 +7,32 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #90f06a;
+  border-bottom: 1px solid #eee;
 
   @include mixins.responsive(xs) {
-    //css code
-    padding: 1.2rem 1rem;
-
-    h2 {
-      font-size: 1.2rem;
-    }
+    padding: 1rem 2rem;
   }
 
   @include mixins.responsive(sm) {
-    //sm->landscape mode ie:mobile L
-    //css code
     padding: 1rem 2rem;
-
-    h2 {
-      font-size: 1.5rem;
-    }
   }
 
   @include mixins.responsive(md) {
-    //css code
     padding: 1rem 2rem;
   }
 
   @include mixins.responsive(lg) {
-    //css code
     padding: 1rem 6rem;
   }
 
-  @include mixins.responsive(xlg) {
-    //css code
-    padding: 1rem 13rem;
-  }
-
-  @include mixins.responsive(xxlg) {
-    //css code
-    padding: 1rem 20rem;
-  }
-
   h2 > span {
-    font-size: 1rem;
     @include mixins.responsive(xs) {
+      // display: none;
+      font-size: 1rem;
+    }
+
+    @include mixins.responsive(lg) {
+      // display: none;
       font-size: 1rem;
     }
   }
@@ -68,9 +50,8 @@
       font-size: 1.3rem;
     }
 
-    @include mixins.responsive(md) {
-      display: block;
-      font-size: 1.5rem;
+    @include mixins.responsive(lg) {
+      display: none;
     }
   }
 
@@ -79,7 +60,6 @@
     align-items: center;
     list-style: none;
     text-transform: uppercase;
-    font-weight: bolder;
 
     @include mixins.responsive(xs) {
       display: none;
@@ -93,36 +73,20 @@
       @include mixins.mobile-menu;
     }
 
-    @include mixins.responsive(md) {
-      display: none;
-
-      @include mixins.mobile-menu;
-    }
-
     @include mixins.responsive(lg) {
       display: flex;
     }
 
     &__item > a {
-      margin-right: 5rem;
-      font-size: 16px;
+      margin-right: 1.2rem;
+      font-size: 14px;
+      font-weight: 600;
       text-decoration: none;
-      color: #242424;
-      transition: 300ms;
+      color: func.theme-colors("dark");
+      transition: 200ms;
 
-      @include mixins.responsive(xs) {
-        font-size: 15px;
-        margin: 0 3rem;
-      }
-
-      @include mixins.responsive(sm) {
-        font-size: 15px;
-        margin: 0 3rem;
-      }
-
-      @include mixins.responsive(md) {
-        font-size: 25px;
-        margin: 0 3rem;
+      & > b {
+        color: #fff;
       }
 
       &:hover {
@@ -142,6 +106,7 @@
     right: 0;
     width: 100%;
     background-color: #fff;
+    box-shadow: 1px 1px 2px 0 #e6e6e6;
     z-index: 999;
   }
 }

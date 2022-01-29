@@ -27,10 +27,6 @@
     @include mixins.responsive(lg) {
       top: 30%;
     }
-
-    @include mixins.responsive(xlg) {
-      top: 25%;
-    }
   }
 
   .box2 {
@@ -52,12 +48,7 @@
     }
 
     @include mixins.responsive(lg) {
-      top: 150%;
-      left: 80%;
-    }
-
-    @include mixins.responsive(xlg) {
-      top: 90%;
+      top: 70%;
       left: 80%;
     }
   }
@@ -76,6 +67,10 @@
     animation: box-shape linear 5s infinite;
 
     @include mixins.responsive(sm) {
+      top: 35%;
+    }
+
+    @include mixins.responsive(lg) {
       top: 35%;
     }
   }
@@ -97,7 +92,7 @@
     }
 
     @include mixins.responsive(lg) {
-      top: 90%;
+      top: 20%;
     }
   }
 
@@ -176,7 +171,7 @@
     }
 
     @include mixins.responsive(lg) {
-      top: 50%;
+      top: 70%;
       left: 40%;
     }
   }
@@ -235,12 +230,8 @@
     }
 
     @include mixins.responsive(lg) {
-      top: 150%;
+      top: 70%;
       left: 10%;
-    }
-
-    @include mixins.responsive(xlg) {
-      top: 80%;
     }
   }
 
@@ -265,11 +256,7 @@
     }
 
     @include mixins.responsive(lg) {
-      top: 35%;
-    }
-
-    @include mixins.responsive(xlg) {
-      top: 25%;
+      top: 80%;
     }
   }
 }

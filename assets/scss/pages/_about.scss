@@ -29,14 +29,10 @@
   }
 
   @include mixins.responsive(lg) {
-    padding: 8rem 6rem;
+    padding: 8rem 3rem;
     flex-direction: row;
     margin-top: 0;
     align-items: center;
-  }
-
-  @include mixins.responsive(xlg) {
-    padding: 8rem 15rem;
   }
 
   &--img {

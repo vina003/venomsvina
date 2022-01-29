@@ -18,15 +18,7 @@
   }
 
   @include mixins.responsive(lg) {
-    padding: 8rem 4rem;
-  }
-
-  @include mixins.responsive(xlg) {
-    padding: 8rem 4rem;
-  }
-
-  @include mixins.responsive(xxlg) {
-    padding: 8rem 10rem;
+    padding: 8rem 3rem;
   }
 
   &--heading {
@@ -48,7 +40,7 @@
         font-size: 1.5rem;
       }
 
-      @include mixins.responsive(xxlg) {
+      @include mixins.responsive(lg) {
         font-size: 2rem;
       }
     }
@@ -62,10 +54,6 @@
 
       @include mixins.responsive(sm) {
         font-size: 0.9rem;
-      }
-
-      @include mixins.responsive(xxlg) {
-        font-size: 1rem;
       }
     }
   }
@@ -96,22 +84,14 @@
     overflow: hidden;
 
     @include mixins.responsive(lg) {
-      max-width: 380px;
-    }
-
-    @include mixins.responsive(xxlg) {
-      max-width: 350px;
+      max-width: 250px;
     }
 
     &--img {
       width: 380px;
 
       @include mixins.responsive(lg) {
-        width: 380px;
-      }
-
-      @include mixins.responsive(xxlg) {
-        width: 350px;
+        max-width: 250px;
       }
     }
 
@@ -130,11 +110,7 @@
         }
 
         @include mixins.responsive(lg) {
-          font-size: 1rem;
-        }
-
-        @include mixins.responsive(xxlg) {
-          font-size: 1.5rem;
+          font-size: 0.7rem;
         }
       }
 
@@ -152,10 +128,6 @@
 
         @include mixins.responsive(lg) {
           font-size: 0.8rem;
-        }
-
-        @include mixins.responsive(xxlg) {
-          font-size: 1rem;
         }
       }
     }
