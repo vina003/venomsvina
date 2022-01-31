@@ -59,7 +59,6 @@
     }
 
     @include mixins.responsive(md) {
-      display: block;
       font-size: 1.3rem;
     }
 
@@ -84,10 +83,6 @@
       display: none;
 
       @include mixins.mobile-menu;
-    }
-
-    @include mixins.responsive(md) {
-      display: none;
     }
 
     @include mixins.responsive(lg) {

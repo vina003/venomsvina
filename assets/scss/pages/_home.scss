@@ -65,7 +65,7 @@
       max-width: 30rem;
     }
 
-    @include mixins.responsive(lg) {
+    @include mixins.responsive(xlg) {
       max-width: 30rem;
     }
 
@@ -88,9 +88,7 @@
       }
 
       @include mixins.responsive(sm) {
-        h2 {
-          font-size: 1rem;
-        }
+        font-size: 1rem;
       }
 
       @include mixins.responsive(lg) {
@@ -101,7 +99,7 @@
         font-size: 3rem;
       }
 
-      @include mixins.responsive(xlg) {
+      @include mixins.responsive(xxlg) {
         font-size: 3rem;
       }
 
